@@ -67,7 +67,7 @@ const game = () => {
     const winner = document.querySelector(".winner");
     // Checking for a tie
     if (playerChoice === comptChoice) {
-      winner.textContent = "It is a tie";
+      winner.textContent = "It Is A Tie";
       return;
     }
     //  Check for rock
@@ -87,12 +87,12 @@ const game = () => {
     // Check for paper
     if (playerChoice === "paper") {
       if (comptChoice === "scissors") {
-        winner.textContent = "Computer wins";
+        winner.textContent = "Computer Wins";
         cScore++;
         udateScore();
         return;
       } else {
-        winner.textContent = "Player wins";
+        winner.textContent = "Player Wins";
         pScore++;
         udateScore();
         return;
@@ -101,12 +101,12 @@ const game = () => {
     // Check for scissors
     if (playerChoice === "scissors") {
       if (comptChoice === "rock") {
-        winner.textContent = "Computer wins";
+        winner.textContent = "Computer Wins";
         cScore++;
         udateScore();
         return;
       } else {
-        winner.textContent = "Player wins";
+        winner.textContent = "Player Wins";
         pScore++;
         udateScore();
         return;
